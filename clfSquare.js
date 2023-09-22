@@ -18,15 +18,15 @@ window.onload = function init()
 
     // Define colors and opacity for each vertex
     var colors = [
-        vec4(1.0, 0.0, 0.0, 1.0), // Red
-        vec4(0.0, 1.0, 0.0, 0.7), // Green with 70% opacity
-        vec4(0.0, 0.0, 1.0, 0.5), // Blue with 50% opacity
-        vec4(1.0, 1.0, 0.0, 0.8)  // Yellow with 80% opacity
+        vec4(1.0, 0.0, 0.0, 1.0),
+        vec4(1.0, 1.0, 1.0, 1.0),
+        vec4(1.0, 1.0, 1.0, 1.0),
+        vec4(1.0, 1.0, 1.0, 1.0)
     ];
 
     // Configure WebGL
     gl.viewport( 0, 0, canvas.width, canvas.height );
-    gl.clearColor( 0.0, 0.0, 0.0, 1.0 );
+    gl.clearColor( 1.0, 1.0, 1.0, 1.0 );
 
     // Load shaders and initialize attribute buffers
     var program = initShaders( gl, "vertex-shader", "fragment-shader" );
